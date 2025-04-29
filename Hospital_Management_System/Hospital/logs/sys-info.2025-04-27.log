@@ -1,0 +1,86 @@
+20:29:32.846 [restartedMain] INFO  c.h.Application - [logStarting,55] - Starting Application using Java 1.8.0_411 on DESKTOP-1L5V97L with PID 12100 (C:\Users\许睿姣\Desktop\Hospital\hospital-admin\target\classes started by 许睿姣 in C:\Users\许睿姣\Desktop\Hospital)
+20:29:32.853 [restartedMain] INFO  c.h.Application - [logStartupProfileInfo,686] - The following 1 profile is active: "dev"
+20:29:32.863 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+20:29:35.136 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+20:29:35.136 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:29:35.137 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+20:29:35.209 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:29:36.468 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1} inited
+20:29:39.737 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+20:29:39.741 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+20:29:39.872 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+20:30:56.996 [restartedMain] INFO  c.h.Application - [logStarting,55] - Starting Application using Java 1.8.0_411 on DESKTOP-1L5V97L with PID 19132 (C:\Users\许睿姣\Desktop\Hospital\hospital-admin\target\classes started by 许睿姣 in C:\Users\许睿姣\Desktop\Hospital)
+20:30:56.997 [restartedMain] INFO  c.h.Application - [logStartupProfileInfo,686] - The following 1 profile is active: "dev"
+20:30:57.001 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+20:30:58.682 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+20:30:58.682 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:30:58.682 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+20:30:58.751 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:30:59.803 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1} inited
+20:31:03.035 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+20:31:03.038 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+20:31:03.162 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+20:32:49.683 [restartedMain] INFO  c.h.Application - [logStarting,55] - Starting Application using Java 1.8.0_411 on DESKTOP-1L5V97L with PID 19344 (C:\Users\许睿姣\Desktop\Hospital\hospital-admin\target\classes started by 许睿姣 in C:\Users\许睿姣\Desktop\Hospital)
+20:32:49.688 [restartedMain] INFO  c.h.Application - [logStartupProfileInfo,686] - The following 1 profile is active: "dev"
+20:32:49.689 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+20:32:51.359 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+20:32:51.359 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:32:51.359 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+20:32:51.425 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:32:52.439 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1} inited
+20:32:55.601 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+20:32:55.604 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+20:32:55.728 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+20:33:53.268 [restartedMain] INFO  c.h.Application - [logStarting,55] - Starting Application using Java 1.8.0_411 on DESKTOP-1L5V97L with PID 12300 (C:\Users\许睿姣\Desktop\Hospital\hospital-admin\target\classes started by 许睿姣 in C:\Users\许睿姣\Desktop\Hospital)
+20:33:53.269 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+20:33:53.270 [restartedMain] INFO  c.h.Application - [logStartupProfileInfo,686] - The following 1 profile is active: "dev"
+20:33:55.672 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+20:33:55.672 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:33:55.672 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+20:33:55.779 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:33:57.370 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1} inited
+20:34:00.593 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+20:34:00.593 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed
+20:34:00.811 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+20:36:43.483 [restartedMain] INFO  c.h.Application - [logStarting,55] - Starting Application using Java 1.8.0_411 on DESKTOP-1L5V97L with PID 7360 (C:\Users\许睿姣\Desktop\Hospital\hospital-admin\target\classes started by 许睿姣 in C:\Users\许睿姣\Desktop\Hospital)
+20:36:43.483 [restartedMain] INFO  c.h.Application - [logStartupProfileInfo,686] - The following 1 profile is active: "dev"
+20:36:43.483 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+20:36:45.130 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+20:36:45.130 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:36:45.130 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.75]
+20:36:45.196 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:36:46.214 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,1002] - {dataSource-1} inited
+20:36:47.809 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+20:36:47.819 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20:36:47.819 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+20:36:47.820 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
+20:36:47.820 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20:36:47.820 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+20:36:47.820 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+20:36:47.820 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3a7ec55c
+20:36:49.083 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+20:36:49.236 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+20:36:49.256 [restartedMain] INFO  c.h.Application - [logStarted,61] - Started Application in 6.002 seconds (JVM running for 6.874)
+20:36:57.460 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:37:08.518 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Error][验证码错误]
+20:37:13.732 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Success][登录成功]
+20:40:22.545 [schedule-pool-2] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Logout][退出成功]
+20:40:27.293 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user1][Success][登录成功]
+20:41:07.193 [schedule-pool-2] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user1][Logout][退出成功]
+20:41:13.609 [schedule-pool-4] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Error][验证码错误]
+20:41:18.792 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Success][登录成功]
+21:29:01.054 [schedule-pool-5] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Success][登录成功]
+23:40:43.752 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+23:40:44.122 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+23:40:44.122 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+23:40:44.123 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+23:40:44.123 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+23:40:44.124 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2204] - {dataSource-1} closing ...
+23:40:44.125 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2277] - {dataSource-1} closed

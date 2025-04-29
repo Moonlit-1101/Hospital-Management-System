@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hospital.mapper.HospitalPrescriptionManagementMapper">
+    
+    <resultMap type="HospitalPrescriptionManagement" id="HospitalPrescriptionManagementResult">
+        <result property="prescriptionId"    column="prescription_id"    />
+        <result property="dosage"    column="dosage"    />
+        <result property="usageInstructions"    column="usage_instructions"    />
+        <result property="prescriptionDate"    column="prescription_date"    />
+        <result property="applicableSymptoms"    column="applicable_symptoms"    />
+        <result property="doctorName"    column="doctor_name"    />
+    </resultMap>
+
+    <sql id="selectHospitalPrescriptionManagementVo">
+        select prescription_id, dosage, usage_instructions, prescription_date, applicable_symptoms, doctor_name from hospital_prescription_management
+    </sql>
+
+    <select id="selectHospitalPrescriptionManagementList" parameterType="HospitalPrescriptionManagement" resultMap="HospitalPrescriptionManagementResult">
+        <include refid="selectHospitalPrescriptionManagementVo"/>
+        <where>  
+            <if test="dosage != null  and dosage != ''"> and dosage = #{dosage}</if>
+            <if test="usageInstructions != null  and usageInstructions != ''"> and usage_instructions = #{usageInstructions}</if>
+            <if test="prescriptionDate != null "> and prescription_date = #{prescriptionDate}</if>
+            <if test="applicableSymptoms != null  and applicableSymptoms != ''"> and applicable_symptoms like concat('%', #{applicableSymptoms}, '%')</if>
+            <if test="doctorName != null  and doctorName != ''"> and doctor_name like concat('%', #{doctorName}, '%')</if>
+        </where>
+    </select>
+    
+    <select id="selectHospitalPrescriptionManagementByPrescriptionId" parameterType="Long" resultMap="HospitalPrescriptionManagementResult">
+        <include refid="selectHospitalPrescriptionManagementVo"/>
+        where prescription_id = #{prescriptionId}
+    </select>
+
+    <insert id="insertHospitalPrescriptionManagement" parameterType="HospitalPrescriptionManagement" useGeneratedKeys="true" keyProperty="prescriptionId">
+        insert into hospital_prescription_management
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="dosage != null and dosage != ''">dosage,</if>
+            <if test="usageInstructions != null and usageInstructions != ''">usage_instructions,</if>
+            <if test="prescriptionDate != null">prescription_date,</if>
+            <if test="applicableSymptoms != null">applicable_symptoms,</if>
+            <if test="doctorName != null and doctorName != ''">doctor_name,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="dosage != null and dosage != ''">#{dosage},</if>
+            <if test="usageInstructions != null and usageInstructions != ''">#{usageInstructions},</if>
+            <if test="prescriptionDate != null">#{prescriptionDate},</if>
+            <if test="applicableSymptoms != null">#{applicableSymptoms},</if>
+            <if test="doctorName != null and doctorName != ''">#{doctorName},</if>
+         </trim>
+    </insert>
+
+    <update id="updateHospitalPrescriptionManagement" parameterType="HospitalPrescriptionManagement">
+        update hospital_prescription_management
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="dosage != null and dosage != ''">dosage = #{dosage},</if>
+            <if test="usageInstructions != null and usageInstructions != ''">usage_instructions = #{usageInstructions},</if>
+            <if test="prescriptionDate != null">prescription_date = #{prescriptionDate},</if>
+            <if test="applicableSymptoms != null">applicable_symptoms = #{applicableSymptoms},</if>
+            <if test="doctorName != null and doctorName != ''">doctor_name = #{doctorName},</if>
+        </trim>
+        where prescription_id = #{prescriptionId}
+    </update>
+
+    <delete id="deleteHospitalPrescriptionManagementByPrescriptionId" parameterType="Long">
+        delete from hospital_prescription_management where prescription_id = #{prescriptionId}
+    </delete>
+
+    <delete id="deleteHospitalPrescriptionManagementByPrescriptionIds" parameterType="String">
+        delete from hospital_prescription_management where prescription_id in 
+        <foreach item="prescriptionId" collection="array" open="(" separator="," close=")">
+            #{prescriptionId}
+        </foreach>
+    </delete>
+</mapper>

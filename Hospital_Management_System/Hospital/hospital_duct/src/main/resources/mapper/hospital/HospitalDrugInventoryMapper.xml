@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hospital.mapper.HospitalDrugInventoryMapper">
+    
+    <resultMap type="HospitalDrugInventory" id="HospitalDrugInventoryResult">
+        <result property="drugId"    column="drug_id"    />
+        <result property="drugName"    column="drug_name"    />
+        <result property="specification"    column="specification"    />
+        <result property="unitPrice"    column="unit_price"    />
+        <result property="applicableSymptoms"    column="applicable_symptoms"    />
+        <result property="stockQuantity"    column="stock_quantity"    />
+        <result property="productionDate"    column="production_date"    />
+        <result property="expirationDate"    column="expiration_date"    />
+        <result property="directions"    column="directions"    />
+    </resultMap>
+
+    <sql id="selectHospitalDrugInventoryVo">
+        select drug_id, drug_name, specification, unit_price, applicable_symptoms, stock_quantity, production_date, expiration_date, directions from hospital_drug_inventory
+    </sql>
+
+    <select id="selectHospitalDrugInventoryList" parameterType="HospitalDrugInventory" resultMap="HospitalDrugInventoryResult">
+        <include refid="selectHospitalDrugInventoryVo"/>
+        <where>  
+            <if test="drugName != null  and drugName != ''"> and drug_name like concat('%', #{drugName}, '%')</if>
+            <if test="specification != null  and specification != ''"> and specification = #{specification}</if>
+            <if test="unitPrice != null "> and unit_price = #{unitPrice}</if>
+            <if test="applicableSymptoms != null  and applicableSymptoms != ''"> and applicable_symptoms like concat('%', #{applicableSymptoms}, '%')</if>
+            <if test="stockQuantity != null "> and stock_quantity = #{stockQuantity}</if>
+            <if test="productionDate != null "> and production_date = #{productionDate}</if>
+            <if test="expirationDate != null "> and expiration_date = #{expirationDate}</if>
+            <if test="directions != null  and directions != ''"> and directions = #{directions}</if>
+        </where>
+    </select>
+    
+    <select id="selectHospitalDrugInventoryByDrugId" parameterType="Long" resultMap="HospitalDrugInventoryResult">
+        <include refid="selectHospitalDrugInventoryVo"/>
+        where drug_id = #{drugId}
+    </select>
+
+    <insert id="insertHospitalDrugInventory" parameterType="HospitalDrugInventory" useGeneratedKeys="true" keyProperty="drugId">
+        insert into hospital_drug_inventory
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="drugName != null and drugName != ''">drug_name,</if>
+            <if test="specification != null">specification,</if>
+            <if test="unitPrice != null">unit_price,</if>
+            <if test="applicableSymptoms != null">applicable_symptoms,</if>
+            <if test="stockQuantity != null">stock_quantity,</if>
+            <if test="productionDate != null">production_date,</if>
+            <if test="expirationDate != null">expiration_date,</if>
+            <if test="directions != null">directions,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="drugName != null and drugName != ''">#{drugName},</if>
+            <if test="specification != null">#{specification},</if>
+            <if test="unitPrice != null">#{unitPrice},</if>
+            <if test="applicableSymptoms != null">#{applicableSymptoms},</if>
+            <if test="stockQuantity != null">#{stockQuantity},</if>
+            <if test="productionDate != null">#{productionDate},</if>
+            <if test="expirationDate != null">#{expirationDate},</if>
+            <if test="directions != null">#{directions},</if>
+         </trim>
+    </insert>
+
+    <update id="updateHospitalDrugInventory" parameterType="HospitalDrugInventory">
+        update hospital_drug_inventory
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="drugName != null and drugName != ''">drug_name = #{drugName},</if>
+            <if test="specification != null">specification = #{specification},</if>
+            <if test="unitPrice != null">unit_price = #{unitPrice},</if>
+            <if test="applicableSymptoms != null">applicable_symptoms = #{applicableSymptoms},</if>
+            <if test="stockQuantity != null">stock_quantity = #{stockQuantity},</if>
+            <if test="productionDate != null">production_date = #{productionDate},</if>
+            <if test="expirationDate != null">expiration_date = #{expirationDate},</if>
+            <if test="directions != null">directions = #{directions},</if>
+        </trim>
+        where drug_id = #{drugId}
+    </update>
+
+    <delete id="deleteHospitalDrugInventoryByDrugId" parameterType="Long">
+        delete from hospital_drug_inventory where drug_id = #{drugId}
+    </delete>
+
+    <delete id="deleteHospitalDrugInventoryByDrugIds" parameterType="String">
+        delete from hospital_drug_inventory where drug_id in 
+        <foreach item="drugId" collection="array" open="(" separator="," close=")">
+            #{drugId}
+        </foreach>
+    </delete>
+</mapper>

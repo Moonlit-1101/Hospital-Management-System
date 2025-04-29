@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hospital.mapper.HospitalNursingRecordMapper">
+    
+    <resultMap type="HospitalNursingRecord" id="HospitalNursingRecordResult">
+        <result property="recordId"    column="record_id"    />
+        <result property="patientId"    column="patient_id"    />
+        <result property="patientName"    column="patient_name"    />
+        <result property="nursingDate"    column="nursing_date"    />
+        <result property="nursingContent"    column="nursing_content"    />
+        <result property="nurseName"    column="nurse_name"    />
+    </resultMap>
+
+    <sql id="selectHospitalNursingRecordVo">
+        select record_id, patient_id, patient_name, nursing_date, nursing_content, nurse_name from hospital_nursing_record
+    </sql>
+
+    <select id="selectHospitalNursingRecordList" parameterType="HospitalNursingRecord" resultMap="HospitalNursingRecordResult">
+        <include refid="selectHospitalNursingRecordVo"/>
+        <where>  
+            <if test="patientId != null "> and patient_id = #{patientId}</if>
+            <if test="patientName != null  and patientName != ''"> and patient_name like concat('%', #{patientName}, '%')</if>
+            <if test="nursingDate != null "> and nursing_date = #{nursingDate}</if>
+            <if test="nursingContent != null  and nursingContent != ''"> and nursing_content = #{nursingContent}</if>
+            <if test="nurseName != null  and nurseName != ''"> and nurse_name like concat('%', #{nurseName}, '%')</if>
+        </where>
+    </select>
+    
+    <select id="selectHospitalNursingRecordByRecordId" parameterType="Long" resultMap="HospitalNursingRecordResult">
+        <include refid="selectHospitalNursingRecordVo"/>
+        where record_id = #{recordId}
+    </select>
+
+    <insert id="insertHospitalNursingRecord" parameterType="HospitalNursingRecord" useGeneratedKeys="true" keyProperty="recordId">
+        insert into hospital_nursing_record
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="patientId != null">patient_id,</if>
+            <if test="patientName != null">patient_name,</if>
+            <if test="nursingDate != null">nursing_date,</if>
+            <if test="nursingContent != null and nursingContent != ''">nursing_content,</if>
+            <if test="nurseName != null and nurseName != ''">nurse_name,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="patientId != null">#{patientId},</if>
+            <if test="patientName != null">#{patientName},</if>
+            <if test="nursingDate != null">#{nursingDate},</if>
+            <if test="nursingContent != null and nursingContent != ''">#{nursingContent},</if>
+            <if test="nurseName != null and nurseName != ''">#{nurseName},</if>
+         </trim>
+    </insert>
+
+    <update id="updateHospitalNursingRecord" parameterType="HospitalNursingRecord">
+        update hospital_nursing_record
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="patientId != null">patient_id = #{patientId},</if>
+            <if test="patientName != null">patient_name = #{patientName},</if>
+            <if test="nursingDate != null">nursing_date = #{nursingDate},</if>
+            <if test="nursingContent != null and nursingContent != ''">nursing_content = #{nursingContent},</if>
+            <if test="nurseName != null and nurseName != ''">nurse_name = #{nurseName},</if>
+        </trim>
+        where record_id = #{recordId}
+    </update>
+
+    <delete id="deleteHospitalNursingRecordByRecordId" parameterType="Long">
+        delete from hospital_nursing_record where record_id = #{recordId}
+    </delete>
+
+    <delete id="deleteHospitalNursingRecordByRecordIds" parameterType="String">
+        delete from hospital_nursing_record where record_id in 
+        <foreach item="recordId" collection="array" open="(" separator="," close=")">
+            #{recordId}
+        </foreach>
+    </delete>
+</mapper>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hospital.mapper.HospitalPatientInfoMapper">
+    
+    <resultMap type="HospitalPatientInfo" id="HospitalPatientInfoResult">
+        <result property="patientId"    column="patient_id"    />
+        <result property="patientName"    column="patient_name"    />
+        <result property="gender"    column="gender"    />
+        <result property="age"    column="age"    />
+        <result property="contactNumber"    column="contact_number"    />
+        <result property="admissionDate"    column="admission_date"    />
+        <result property="dischargeDate"    column="discharge_date"    />
+        <result property="medicalHistory"    column="medical_history"    />
+        <result property="allergyStatus"    column="allergy_status"    />
+        <result property="isAdmission"    column="is_admission"    />
+        <result property="patientPng"    column="patient_png"    />
+        <result property="patientState"    column="patient_state"    />
+        <result property="treatmentPlan"    column="treatment_plan"    />
+    </resultMap>
+
+    <sql id="selectHospitalPatientInfoVo">
+        select patient_id, patient_name, gender, age, contact_number, admission_date, discharge_date, medical_history, allergy_status, is_admission, patient_png, patient_state, treatment_plan from hospital_patient_info
+    </sql>
+
+    <select id="selectHospitalPatientInfoList" parameterType="HospitalPatientInfo" resultMap="HospitalPatientInfoResult">
+        <include refid="selectHospitalPatientInfoVo"/>
+        <where>  
+            <if test="patientName != null  and patientName != ''"> and patient_name like concat('%', #{patientName}, '%')</if>
+            <if test="gender != null  and gender != ''"> and gender = #{gender}</if>
+            <if test="age != null "> and age = #{age}</if>
+            <if test="contactNumber != null  and contactNumber != ''"> and contact_number = #{contactNumber}</if>
+            <if test="patientState != null  and patientState != ''"> and patient_state = #{patientState}</if>
+        </where>
+    </select>
+    
+    <select id="selectHospitalPatientInfoByPatientId" parameterType="Long" resultMap="HospitalPatientInfoResult">
+        <include refid="selectHospitalPatientInfoVo"/>
+        where patient_id = #{patientId}
+    </select>
+
+    <insert id="insertHospitalPatientInfo" parameterType="HospitalPatientInfo" useGeneratedKeys="true" keyProperty="patientId">
+        insert into hospital_patient_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="patientName != null">patient_name,</if>
+            <if test="gender != null">gender,</if>
+            <if test="age != null">age,</if>
+            <if test="contactNumber != null">contact_number,</if>
+            <if test="admissionDate != null">admission_date,</if>
+            <if test="dischargeDate != null">discharge_date,</if>
+            <if test="medicalHistory != null">medical_history,</if>
+            <if test="allergyStatus != null">allergy_status,</if>
+            <if test="isAdmission != null">is_admission,</if>
+            <if test="patientPng != null">patient_png,</if>
+            <if test="patientState != null">patient_state,</if>
+            <if test="treatmentPlan != null">treatment_plan,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="patientName != null">#{patientName},</if>
+            <if test="gender != null">#{gender},</if>
+            <if test="age != null">#{age},</if>
+            <if test="contactNumber != null">#{contactNumber},</if>
+            <if test="admissionDate != null">#{admissionDate},</if>
+            <if test="dischargeDate != null">#{dischargeDate},</if>
+            <if test="medicalHistory != null">#{medicalHistory},</if>
+            <if test="allergyStatus != null">#{allergyStatus},</if>
+            <if test="isAdmission != null">#{isAdmission},</if>
+            <if test="patientPng != null">#{patientPng},</if>
+            <if test="patientState != null">#{patientState},</if>
+            <if test="treatmentPlan != null">#{treatmentPlan},</if>
+         </trim>
+    </insert>
+
+    <update id="updateHospitalPatientInfo" parameterType="HospitalPatientInfo">
+        update hospital_patient_info
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="patientName != null">patient_name = #{patientName},</if>
+            <if test="gender != null">gender = #{gender},</if>
+            <if test="age != null">age = #{age},</if>
+            <if test="contactNumber != null">contact_number = #{contactNumber},</if>
+            <if test="admissionDate != null">admission_date = #{admissionDate},</if>
+            <if test="dischargeDate != null">discharge_date = #{dischargeDate},</if>
+            <if test="medicalHistory != null">medical_history = #{medicalHistory},</if>
+            <if test="allergyStatus != null">allergy_status = #{allergyStatus},</if>
+            <if test="isAdmission != null">is_admission = #{isAdmission},</if>
+            <if test="patientPng != null">patient_png = #{patientPng},</if>
+            <if test="patientState != null">patient_state = #{patientState},</if>
+            <if test="treatmentPlan != null">treatment_plan = #{treatmentPlan},</if>
+        </trim>
+        where patient_id = #{patientId}
+    </update>
+
+    <delete id="deleteHospitalPatientInfoByPatientId" parameterType="Long">
+        delete from hospital_patient_info where patient_id = #{patientId}
+    </delete>
+
+    <delete id="deleteHospitalPatientInfoByPatientIds" parameterType="String">
+        delete from hospital_patient_info where patient_id in 
+        <foreach item="patientId" collection="array" open="(" separator="," close=")">
+            #{patientId}
+        </foreach>
+    </delete>
+</mapper>

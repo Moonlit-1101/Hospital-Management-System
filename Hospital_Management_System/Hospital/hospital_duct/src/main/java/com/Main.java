@@ -1,0 +1,89 @@
+package com;
+
+import com.hospital.utils.WordTemplate;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+// 按两次 Shift 打开“随处搜索”对话框并输入 `show whitespaces`，
+// 然后按 Enter 键。现在，您可以在代码中看到空格字符。
+public class Main {
+    public static void main(String[] args) throws IOException {
+
+        Map<String, Object> wordDataMap = new HashMap<String, Object>();// 存储报表全部数据
+        Map<String, Object> parametersMap = new HashMap<String, Object>();// 存储报表中不循环的数据
+
+        List<Map<String, Object>> table1 = new ArrayList<Map<String, Object>>();
+        Map<String, Object> map1=new HashMap<>();
+        map1.put("name", "张三");
+        map1.put("age", "23");
+        map1.put("email", "12121@qq.com");
+        map1.put("address", "上海");
+
+        Map<String, Object> map2=new HashMap<>();
+        map2.put("name", "李四");
+        map2.put("age", "45");
+        map2.put("email", "45445@qq.com");
+        map2.put("address", "北京");
+
+        Map<String, Object> map3=new HashMap<>();
+        map3.put("name", "Tom");
+        map3.put("age", "34");
+        map3.put("email", "6767@qq.com");
+        map3.put("address", "广州");
+
+        table1.add(map1);
+        table1.add(map2);
+        table1.add(map3);
+
+
+        List<Map<String, Object>> table2 = new ArrayList<Map<String, Object>>();
+        Map<String, Object> map4=new HashMap<>();
+        map4.put("name", "tom");
+        map4.put("number", "sd1234");
+        map4.put("address", "上海");
+
+        Map<String, Object> map5=new HashMap<>();
+        map5.put("name", "seven");
+        map5.put("number", "sd15678");
+        map5.put("address", "北京");
+
+        Map<String, Object> map6=new HashMap<>();
+        map6.put("name", "lisa");
+        map6.put("number", "sd9078");
+        map6.put("address", "广州");
+
+        table2.add(map4);
+        table2.add(map5);
+        table2.add(map6);
+
+
+        wordDataMap.put("table1", table1);
+       /* wordDataMap.put("table2", table2);*/
+
+        parametersMap.put("name", "豆豆");
+        parametersMap.put("date", "2025-04-16");
+        parametersMap.put("number", "3");
+        wordDataMap.put("parametersMap", parametersMap);
+        File file = new File("doc/周报模板.docx");//改成你本地文件所在目录
+
+
+        // 读取word模板
+        FileInputStream fileInputStream = new FileInputStream(file);
+        WordTemplate template = new WordTemplate(fileInputStream);
+
+        // 替换数据
+        template.replaceDocument(wordDataMap);
+
+
+        //生成文件
+        File outputFile=new File("doc/输出模板.docx");//改成你本地文件所在目录
+        FileOutputStream fos  = new FileOutputStream(outputFile);
+        template.getDocument().write(fos);
+
+
+    }
+}

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e318d23f-5efa-4f7e-88f3-3404a7d06bd4" name="更改" comment="前端启动">
+      <change afterPath="$PROJECT_DIR$/node_modules" afterDir="true" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.staging" beforeDir="false" afterPath="$PROJECT_DIR$/.env.staging" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/system/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/system/role.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/login-background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/login-background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/Settings/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/Settings/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/dept/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/dept/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/user/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/app.jar!/resources/html5-schema/html5/common.rnc" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/node_modules/element-plus/es/components/container/index.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/node_modules/element-plus/es/index.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/node_modules/element-plus/global.d.ts" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2l0bHbLHM3RTToQ5b0NzxaeJecx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Web/src/views/hospital/beHospitalized",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build:prod.executor": "Run",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\JAVA_Web\\java\\IntelliJ IDEA 2024.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Web\src\views\hospital\beHospitalized" />
+      <recent name="E:\Web\src\views\hospital\diagnosis" />
+      <recent name="E:\Web\src\views\special\special_evaluation_me" />
+      <recent name="E:\Web\src\views\special\examine" />
+      <recent name="E:\Web\src\views\dz\dzOrder" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Web\src\api\dz" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:prod" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build:prod" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\许睿姣\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e318d23f-5efa-4f7e-88f3-3404a7d06bd4" name="更改" comment="" />
+      <created>1724319853998</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724319853998</updated>
+      <workItem from="1724319858234" duration="2759000" />
+      <workItem from="1724640606567" duration="7327000" />
+      <workItem from="1724656474983" duration="1257000" />
+      <workItem from="1724718866406" duration="3015000" />
+      <workItem from="1724727515345" duration="3842000" />
+      <workItem from="1724805716949" duration="1719000" />
+      <workItem from="1724812695892" duration="15150000" />
+      <workItem from="1724891612127" duration="25698000" />
+      <workItem from="1724978208077" duration="10511000" />
+      <workItem from="1725238390420" duration="5002000" />
+      <workItem from="1725266298222" duration="3344000" />
+      <workItem from="1725350638527" duration="3655000" />
+      <workItem from="1725410243612" duration="2419000" />
+      <workItem from="1725610115856" duration="1596000" />
+      <workItem from="1727336539038" duration="5190000" />
+      <workItem from="1727397381840" duration="4533000" />
+      <workItem from="1727488798682" duration="4713000" />
+      <workItem from="1727570790010" duration="1182000" />
+      <workItem from="1727602298554" duration="1412000" />
+      <workItem from="1727657424646" duration="2377000" />
+      <workItem from="1728348069663" duration="6944000" />
+      <workItem from="1728381532386" duration="793000" />
+      <workItem from="1728434203006" duration="2851000" />
+      <workItem from="1728439960739" duration="663000" />
+      <workItem from="1728461120292" duration="1372000" />
+      <workItem from="1728607981269" duration="594000" />
+      <workItem from="1732256328025" duration="7113000" />
+      <workItem from="1732495275244" duration="2387000" />
+      <workItem from="1732581888334" duration="1181000" />
+      <workItem from="1732587870543" duration="2937000" />
+      <workItem from="1732667854256" duration="600000" />
+      <workItem from="1733299180078" duration="708000" />
+      <workItem from="1733994250296" duration="1157000" />
+      <workItem from="1734051903620" duration="3288000" />
+      <workItem from="1734162859657" duration="1170000" />
+      <workItem from="1734312988726" duration="13568000" />
+      <workItem from="1734395633573" duration="26567000" />
+      <workItem from="1734482177185" duration="26714000" />
+      <workItem from="1734568907833" duration="22235000" />
+      <workItem from="1734654927729" duration="8104000" />
+      <workItem from="1734914277516" duration="15531000" />
+      <workItem from="1734945700171" duration="16294000" />
+      <workItem from="1735087646377" duration="6784000" />
+      <workItem from="1735173347177" duration="5918000" />
+      <workItem from="1735260902962" duration="1630000" />
+      <workItem from="1735351397984" duration="5981000" />
+      <workItem from="1735520268286" duration="12764000" />
+      <workItem from="1735606789202" duration="16622000" />
+      <workItem from="1735779238496" duration="13704000" />
+      <workItem from="1735956629582" duration="3953000" />
+      <workItem from="1736123743275" duration="9575000" />
+      <workItem from="1736210706242" duration="7849000" />
+      <workItem from="1736296828710" duration="18844000" />
+      <workItem from="1736383022422" duration="13503000" />
+      <workItem from="1736816441491" duration="3739000" />
+      <workItem from="1737333152913" duration="2099000" />
+      <workItem from="1737425601582" duration="2851000" />
+      <workItem from="1737530055238" duration="1134000" />
+      <workItem from="1737622377597" duration="591000" />
+      <workItem from="1738715733348" duration="605000" />
+      <workItem from="1738809827216" duration="604000" />
+      <workItem from="1738888963082" duration="1138000" />
+      <workItem from="1742871617525" duration="2422000" />
+      <workItem from="1742957858380" duration="661000" />
+      <workItem from="1743045195402" duration="18487000" />
+      <workItem from="1743122069889" duration="20934000" />
+      <workItem from="1743164716796" duration="2248000" />
+      <workItem from="1743213007368" duration="7338000" />
+      <workItem from="1743297624654" duration="4983000" />
+      <workItem from="1743317721940" duration="12901000" />
+      <workItem from="1743390741194" duration="17129000" />
+      <workItem from="1743467820754" duration="11449000" />
+      <workItem from="1743555427421" duration="5201000" />
+      <workItem from="1744020688480" duration="596000" />
+      <workItem from="1744073151157" duration="595000" />
+      <workItem from="1744097271188" duration="2114000" />
+      <workItem from="1744158849598" duration="14248000" />
+      <workItem from="1744245528675" duration="15419000" />
+      <workItem from="1745500305619" duration="1449000" />
+      <workItem from="1745756937677" duration="1464000" />
+      <workItem from="1745925090271" duration="502000" />
+      <workItem from="1745925607033" duration="5075000" />
+    </task>
+    <task id="LOCAL-00001" summary="前端启动">
+      <created>1724752558048</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724752558048</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="前端启动" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端启动" />
+  </component>
+</project>

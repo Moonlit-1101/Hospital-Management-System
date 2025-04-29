@@ -1,0 +1,1 @@
+import{_ as o,e as c,c as n,o as s,p as t,f as a}from"./index-DLRG-hpQ.js";const r={};function _(i,l){const e=c("svg-icon");return s(),n("div",null,[t(" 表单构建 "),a(e,{"icon-class":"build"})])}const f=o(r,[["render",_]]);export{f as default};

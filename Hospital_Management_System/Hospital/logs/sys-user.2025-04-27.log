@@ -1,0 +1,9 @@
+20:37:08.518 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Error][验证码错误]
+20:37:13.732 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Success][登录成功]
+20:40:22.545 [schedule-pool-2] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Logout][退出成功]
+20:40:27.293 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user1][Success][登录成功]
+20:41:07.193 [schedule-pool-2] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user1][Logout][退出成功]
+20:41:13.609 [schedule-pool-4] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Error][验证码错误]
+20:41:18.792 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Success][登录成功]
+21:29:01.054 [schedule-pool-5] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[user11][Success][登录成功]
+23:40:44.123 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
