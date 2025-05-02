@@ -63,17 +63,29 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Vitest.handleDelete.executor": "Run",
+    "Vitest.handleDelete.应该显示带正确消息的确认对话框 - 单条删除.executor": "Run",
+    "Vitest.handleResetPwd.executor": "Run",
+    "Vitest.handleResetPwd.应该拒绝包含非法字符的密码.executor": "Run",
+    "Vitest.handleResetPwd.应该验证密码不包含非法字符.executor": "Run",
+    "Vitest.handleResetPwd.应该验证密码长度在5-20个字符之间.executor": "Run",
+    "Vitest.submitForm.executor": "Run",
+    "Vitest.submitForm.should call update API when patientId exists.executor": "Run",
+    "Vitest.submitForm.should do nothing when form validation fails.executor": "Run",
+    "Vitest.所有测试.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Web/src/views/hospital/beHospitalized",
+    "last_opened_file_path": "D:/git/workspace/Hospital_Management_System/Web",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.build:prod.executor": "Run",
     "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "ts.external.directory.path": "D:\\JAVA_Web\\java\\IntelliJ IDEA 2024.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -90,31 +102,75 @@
       <recent name="E:\Web\src\api\dz" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="build:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:prod" />
-      </scripts>
+  <component name="RunManager" selected="Vitest.submitForm">
+    <configuration name="所有测试" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
+    <configuration name="handleDelete" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
       <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/views/hospital/hospitalRecord/record.spec.js" />
+      <test-names>
+        <test-name value="handleDelete" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="handleResetPwd" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/views/system/user/user.spec.js" />
+      <test-names>
+        <test-name value="handleResetPwd" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="handleResetPwd.应该拒绝包含非法字符的密码" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/views/system/user/user.spec.js" />
+      <test-names>
+        <test-name value="handleResetPwd" />
+        <test-name value="应该拒绝包含非法字符的密码" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="submitForm" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/views/hospital/hospitalInfo/info.spec.js" />
+      <test-names>
+        <test-name value="submitForm" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.build:prod" />
+        <item itemvalue="Vitest.所有测试" />
+        <item itemvalue="Vitest.submitForm" />
+        <item itemvalue="Vitest.handleDelete" />
+        <item itemvalue="Vitest.handleResetPwd" />
+        <item itemvalue="Vitest.handleResetPwd.应该拒绝包含非法字符的密码" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +276,10 @@
       <workItem from="1745756937677" duration="1464000" />
       <workItem from="1745925090271" duration="502000" />
       <workItem from="1745925607033" duration="5075000" />
+      <workItem from="1746023748214" duration="2067000" />
+      <workItem from="1746063708046" duration="5090000" />
+      <workItem from="1746092972407" duration="11442000" />
+      <workItem from="1746144466078" duration="9038000" />
     </task>
     <task id="LOCAL-00001" summary="前端启动">
       <created>1724752558048</created>
@@ -237,5 +297,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="前端启动" />
     <option name="LAST_COMMIT_MESSAGE" value="前端启动" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

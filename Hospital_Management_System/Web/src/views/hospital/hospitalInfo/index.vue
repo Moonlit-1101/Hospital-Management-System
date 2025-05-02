@@ -226,6 +226,18 @@ const data = reactive({
     patientState: null,
   },
   rules: {
+    patientName: [
+      { required: true, message: "病人姓名不能为空", trigger: "blur" },
+      { pattern: /^[\u4e00-\u9fa5]+$/, message: "姓名只能包含汉字", trigger: "blur" }
+    ],
+    gender: [
+      { required: true, message: "病人性别不能为空", trigger: "blur" },
+      { pattern: /^[男女]$/, message: "性别只能是男或女", trigger: "blur" }
+    ],
+    contactNumber: [
+      { required: true, message: "联系电话不能为空", trigger: "blur" },
+      { pattern: /^1[3-9]\d{9}$/, message: "请输入有效的手机号码", trigger: "blur" }
+    ]
   }
 });
 

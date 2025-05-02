@@ -122,7 +122,7 @@
           <el-date-picker clearable
             v-model="form.nursingDate"
             type="date"
-            value-format="YYYY-MM-DD"
+            value-format="YYYY-MM-DD HH:mm:ss"
             placeholder="请选择护理日期">
           </el-date-picker>
         </el-form-item>
@@ -145,6 +145,7 @@
 
 <script setup name="HospitalRecord">
 import { listHospitalRecord, getHospitalRecord, delHospitalRecord, addHospitalRecord, updateHospitalRecord } from "@/api/hospital/hospitalRecord";
+
 
 const { proxy } = getCurrentInstance();
 
